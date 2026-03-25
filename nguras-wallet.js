@@ -1,9 +1,8 @@
 const { ethers } = require("ethers");
 const provider = new ethers.providers.JsonRpcProvider(
-  "https://endpoints.omniatech.io/v1/arbitrum/goerli/4f476e82825a424197198c1d4a1f41c9" // Ganti ke Endpoint Network yang dipilih
+  "https://goerli-rollup.arbitrum.io/rpc"
 );
-const receiverWallet = "0xFaC5c4B11291C573F766fA092AEe9203C8a05E3A"; // Ganti ke Address-mu untuk terima Balance yang ada di wallet bot.
-const privateKeys = [
+const receiverWallet = "0x54811eed81b395526b9Ad2003FfCdB667dB0f953"; 
   "7a4537b7d827a4063c33ecddd103cd8e82376fc23cbe9379b16729b6b52546db", // Ganti dengan Private-Key wallet-mu yang  terkena bot.
 ];
 const contractAddress = "0xd14838A68E8AFBAdE5efb411d5871ea0011AFd28"; // Ganti ke Contract Address Token (ARB/UNI/OP/dll) yang mau dikuras di wallet bot.
